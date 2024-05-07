@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
     <title>Laptop Price Predictor</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="title">Laptop Price Predictor</div>
+        <div class="title">Laptop Price Estimator</div>
         <form action="/" method="POST">
             <div class="form">
                 <div class="inputfield">
@@ -99,7 +98,7 @@
                 </div>
     
                 <div class="inputfield">
-                    <input class="btn" type="submit" value="Precict Price">
+                    <input class="btn" type="submit" value="Estimate Price">
                 </div>
             </div>
         </form>
@@ -111,4 +110,95 @@
         </div>
     </div>
 </body>
+<style>
+    /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000; /* shiny black background */
+    background: linear-gradient(135deg, #000, #333, #000); /* subtle gradient */
+}
+
+.wrapper {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.inputfield {
+    margin-bottom: 15px;
+}
+
+.inputfield label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputfield input,
+.inputfield select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.custom_select {
+    position: relative;
+}
+
+.custom_select select {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.check {
+    display: flex;
+    justify-content: space-between;
+}
+
+.check input {
+    margin-right: 5px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+</style>
 </html>
